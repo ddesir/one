@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: linear-gradient(180deg, var(--dk-grey), var(--lt-blue));
+    background-image: linear-gradient(var(--dk-grey), var(--lt-blue));
     font-family: Avenir, sans-serif;
 }
 
@@ -117,38 +117,29 @@ p {
 @media only screen and (max-width: 480px) {
     .grid {
         grid-template-areas:
-                "brief"
-                "about-me"
+                "header"
                 "projects"
                 "footer";
-        grid-template-rows: repeat(3, minmax(414px, max-content)) 30px;
+        grid-template-rows: repeat(2, minmax(414px, max-content)) 30px;
         grid-template-columns: 1fr;
-        grid-gap: 20px;
     }
 
     header {
+        grid-area: header;
         background-color: var(--lt-blue);
         padding: 20px;
         text-align: left;
     }
 
-    .snap {
-        grid-area: brief;
-    }
-
-    .about-me {
-        grid-area: about-me;
-    }
-
     main {
-        background-color: var(--lt-grey);
-        padding: 20px;
-        color: var(--black);
-        /*grid-gap: 20px;*/
-    }
-
-    .project, .wip {
         grid-area: projects;
+        padding: 20px 0;
+        background-color: var(--lt-grey);
+        color: var(--black);
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     footer {
