@@ -36,10 +36,10 @@ header {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 h1 {
@@ -52,7 +52,7 @@ h1 {
 h2 {
     text-align: left;
     font-size: 1.5rem;
-    padding-bottom: 0.75rem;
+    padding: 0 auto 0.75rem auto;
 }
 
 h3 {
@@ -73,12 +73,14 @@ p {
 }
 
 .project, .wip {
-    background-color: var(--fffa);
+    /*background-color: var(--fffa);*/
     max-width: 374px;
-    padding: 20px 20px 0;
-    border: 1px solid var(--dk-grey);
+    padding: 20px 0;
+    /*border: 1px solid var(--dk-grey);*/
     border-radius: 10px;
     overflow: hidden;
+    align-self: center;
+    justify-self: flex-start;
 }
 
 .project img {
@@ -92,19 +94,31 @@ p {
     color: var(--aqua);
 }
 
+.project h3 a:hover::after {
+    content: " >";
+}
+
 .wip h3 {
     padding-top: 0;
+    color: var(--aqua);
+}
+
+.wip h3:hover::after {
+    content: " wip";
+    color: var(--dk-grey);
+    text-transform: lowercase;
 }
 
 .tag-list {
     list-style-type: none;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    text-align: left;
 }
 
 .tag-list li {
     display: inline-block;
-    float: left;
-    margin: 0 2px 3px 0;
+    /*float: left;*/
+    margin: 0 0 3px 0;
     padding: 3px 5px;
     font-style: italic;
     font-size: 0.875rem;
@@ -120,8 +134,10 @@ p {
                 "header"
                 "projects"
                 "footer";
-        grid-template-rows: repeat(2, minmax(414px, max-content)) 30px;
+        grid-template-rows: minmax(414px, auto) minmax(300px, auto) 30px;
         grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        grid-auto-rows: fit-content(100%);
     }
 
     header {
@@ -133,11 +149,11 @@ p {
 
     main {
         grid-area: projects;
-        padding: 20px 0;
+        padding: 20px;
         background-color: var(--lt-grey);
         color: var(--black);
-        justify-items: center;
-        justify-content: center;
+        justify-items: start;
+        justify-content: start;
         align-items: center;
         align-content: center;
     }
