@@ -87,7 +87,7 @@ h3 {
 }
 
 p {
-    color: var(--dk-grey);
+    color: var(--black);
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: left;
@@ -133,7 +133,7 @@ footer a {
 .project h3 a {
     text-decoration: none;
     text-shadow: 1px 1px 1px var(--dk-grey);
-    color: var(--aqua);
+    color: var(--lt-blue);
 }
 
 .project h3 a:hover::after {
@@ -142,7 +142,7 @@ footer a {
 
 .wip h3 {
     padding-top: 0;
-    color: var(--aqua);
+    color: var(--lt-blue);
 }
 
 .wip h3:hover::after {
@@ -352,7 +352,6 @@ footer a {
     }
 
     p {
-        color: var(--dk-grey);
         font-size: 2rem;
         line-height: 3rem;
         text-align: left;
