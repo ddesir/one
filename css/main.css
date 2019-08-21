@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Avenir');
+/*@import url('https://fonts.googleapis.com/css?family=Avenir');*/
 
 :root, body, * {
     /* CSS variable */
@@ -13,6 +13,16 @@
     padding: 0;
     box-sizing: border-box;
     /*border: 0.1px solid #F00;*/
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url("https://fonts.gstatic.com/l/font?kit=ijwUs5PnXdA4ZZUA55d-m2FJXA&skey=8887f17a62203d44&v=v2");
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url("https://fonts.gstatic.com/l/font?kit=ijwUs5PnXdA4ZZUA6Zd-m2FJXA&skey=8887f17a62203d44&v=v2");
 }
 
 body {
