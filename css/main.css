@@ -18,13 +18,13 @@
 @font-face {
     font-family: Avenir;
     src: url("https://fonts.gstatic.com/l/font?kit=ijwUs5PnXdA4ZZUA55d-m2FJXA&skey=8887f17a62203d44&v=v2");
-    font-display: block;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Avenir;
     src: url("https://fonts.gstatic.com/l/font?kit=ijwUs5PnXdA4ZZUA6Zd-m2FJXA&skey=8887f17a62203d44&v=v2");
-    font-display: block;
+    font-display: swap;
 }
 
 body {
