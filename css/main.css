@@ -2,11 +2,11 @@
 
 :root, body, * {
     /* CSS variable */
-    --aqua: #00ADEF;
-    --lt-blue: #C7DFF4;
+    --aqua: #007DBF;
+    --lt-blue: #E7FFFF;
     --black: #000;
     --dk-grey: #595959;
-    --lt-grey: #828282;
+    --lt-grey: #C2C2C2;
     --fffa: rgba(255, 255, 255, 0.1);
     /* Element reset */
     margin: 0;
@@ -89,7 +89,7 @@ h3 {
 }
 
 p {
-    color: var(--black);
+    color: var(--dk-grey);
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: left;
@@ -117,7 +117,7 @@ footer a {
 }
 
 .project, .wip {
-    background-color: var(--fffa);
+    /*background-color: var(--fffa);*/
     min-width: 280px;
     max-width: 374px;
     padding: 10px 0;
@@ -135,7 +135,7 @@ footer a {
 .project h3 a {
     text-decoration: none;
     text-shadow: 1px 1px 1px var(--dk-grey);
-    color: var(--lt-blue);
+    color: var(--aqua);
 }
 
 .project h3 a:hover::after {
@@ -144,7 +144,7 @@ footer a {
 
 .wip h3 {
     padding-top: 0;
-    color: var(--lt-blue);
+    color: var(--aqua);
 }
 
 .wip h3:hover::after {
