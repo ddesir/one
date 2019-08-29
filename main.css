@@ -150,7 +150,7 @@ footer a {
 
 .wip h3:hover::after {
     content: " wip";
-    color: var(--bg-three);
+    color: var(--txt-one);
     text-transform: lowercase;
 }
 
@@ -168,7 +168,7 @@ footer a {
     font-style: italic;
     font-size: 0.875rem;
     background-color: var(--bg-one);
-    color: var(--bg-three);
+    color: var(--txt-one);
     border: 1px solid var(--bg-three);
     border-radius: 4px;
 }
