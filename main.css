@@ -2,11 +2,17 @@
 
 :root, body, * {
     /* CSS variable */
-    --aqua: #007DBF;
-    --lt-blue: #E7FFFF;
-    --black: #000;
-    --dk-grey: #595959;
-    --lt-grey: #C2C2C2;
+    --bg-one: #E7FFFF;
+    --bg-two: #C2C2C2;
+    --bg-three: #333;
+    --txt-one: #333;
+    --txt-two: #003552;
+    /*--acc-one: ;
+    --acc-two: ;
+    --acc-three: ;
+    --acc-four: ;
+    --acc-five: ;
+    --acc-six: ;*/
     --fffa: rgba(255, 255, 255, 0.1);
     /* Element reset */
     margin: 0;
@@ -17,18 +23,19 @@
 
 @font-face {
     font-family: Avenir;
-    src: url("https://fonts.gstatic.com/l/font?kit=ijwUs5PnXdA4ZZUA55d-m2FJXA&skey=8887f17a62203d44&v=v2");
+    src: url("https://fonts.gstatic.com/l/font?kit=ijwUs5PnXdA4ZZUA55d-m2FJXA&skey=8887f17a62203d44&v=v2"),
+    url("https://fonts.gstatic.com/l/font?kit=ijwUs5PnXdA4ZZUA6Zd-m2FJXA&skey=8887f17a62203d44&v=v2");
     font-display: swap;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url("https://fonts.gstatic.com/l/font?kit=ijwUs5PnXdA4ZZUA6Zd-m2FJXA&skey=8887f17a62203d44&v=v2");
+    src: ;
     font-display: swap;
 }
 
 body {
-    background-image: linear-gradient(var(--dk-grey), var(--lt-blue));
+    background-image: linear-gradient(var(--bg-three), var(--bg-one));
     font-family: Avenir, sans-serif;
 }
 
@@ -49,32 +56,32 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--lt-blue);
+    background-color: var(--bg-one);
     padding: 20px;
     text-align: left;
 }
 
 main {
     padding: 20px;
-    background-color: var(--lt-grey);
-    color: var(--dk-grey);
+    background-color: var(--bg-two);
+    color: var(--bg-three);
 }
 
 footer {
-    background-color: var(--dk-grey);
+    background-color: var(--bg-three);
     width: 100%;
     padding: auto;
 }
 
 h1 {
-    color: var(--aqua);
+    color: var(--txt-two);
     font-size: 2.5rem;
-    text-shadow: 1px 1px 2px var(--dk-grey);
+    text-shadow: 1px 1px 2px var(--bg-three);
     padding-bottom: 0.75rem;
 }
 
 h2 {
-    color: var(--black);
+    color: var(--txt-one);
     text-align: left;
     font-size: 1.5rem;
     padding-bottom: 0.75rem;
@@ -89,7 +96,7 @@ h3 {
 }
 
 p {
-    color: var(--dk-grey);
+    color: var(--bg-three);
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: left;
@@ -100,7 +107,7 @@ header img {
     width: 50%;
     height: auto;
     padding: 0 auto;
-    /* border: 3px solid var(--aqua);
+    /* border: 3px solid var(--txt-two);
     border-radius: 100%; */
 }
 
@@ -121,7 +128,7 @@ footer a {
     min-width: 280px;
     max-width: 374px;
     padding: 10px 0;
-    /*border: 1px solid var(--dk-grey);*/
+    /*border: 1px solid var(--bg-three);*/
     border-radius: 10px;
     /*align-self: center;
     justify-self: flex-start;*/
@@ -134,8 +141,8 @@ footer a {
 
 .project h3 a {
     text-decoration: none;
-    text-shadow: 1px 1px 1px var(--dk-grey);
-    color: var(--aqua);
+    /*text-shadow: 1px 1px 1px var(--bg-three);*/
+    color: var(--txt-two);
 }
 
 .project h3 a:hover::after {
@@ -144,12 +151,12 @@ footer a {
 
 .wip h3 {
     padding-top: 0;
-    color: var(--aqua);
+    color: var(--txt-two);
 }
 
 .wip h3:hover::after {
     content: " wip";
-    color: var(--dk-grey);
+    color: var(--bg-three);
     text-transform: lowercase;
 }
 
@@ -166,9 +173,9 @@ footer a {
     padding: 3px 5px;
     font-style: italic;
     font-size: 0.875rem;
-    background-color: var(--lt-blue);
-    color: var(--dk-grey);
-    border: 1px solid var(--dk-grey);
+    background-color: var(--bg-one);
+    color: var(--bg-three);
+    border: 1px solid var(--bg-three);
     border-radius: 4px;
 }
 
@@ -332,14 +339,14 @@ footer a {
     }
 
     h1 {
-        color: var(--aqua);
+        color: var(--txt-two);
         font-size: 4rem;
-        text-shadow: 2px 2px 4px var(--dk-grey);
+        text-shadow: 2px 2px 4px var(--bg-three);
         padding-bottom: 1.5rem;
     }
 
     h2 {
-        color: var(--black);
+        color: var(--txt-one);
         text-align: left;
         font-size: 3rem;
         padding-bottom: 1.5rem;
