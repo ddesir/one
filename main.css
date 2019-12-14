@@ -179,8 +179,8 @@ footer a {
                 "header"
                 "projects"
                 "footer";
-        grid-template-rows: minmax(414px, auto) minmax(300px, auto) 30px;
-        grid-template-columns: 1fr;
+        grid-template-rows: minmax(100vh, auto) minmax(calc(100vh - 30px), auto) 30px;
+        grid-template-columns: 100vw;
         grid-auto-flow: row;
         grid-auto-rows: fit-content(100%);
     }
