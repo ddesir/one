@@ -1,33 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="First responsive website." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- viewport-fit=cover -->
-  <title>One</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <!-- Generic favicons -->
-  <link rel="icon" type="image/png" href="./img/favicon_32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="./img/favicon_57.png" sizes="57x57">
-  <link rel="icon" type="image/png" href="./img/favicon_76.png" sizes="76x76">
-  <link rel="icon" type="image/png" href="./img/favicon_96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="./img/favicon_128.png" sizes="128x128">
-  <link rel="icon" type="image/png" href="./img/favicon_192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="./img/favicon_228.png" sizes="228x228">
-</head>
+import React from 'react';
+// import logo from './logo.svg';
+import './App.css';
 
-<body>
-<div class="grid">
+class App extends React.Component {
+  
+  render() {
+  	return (
+    <div className="App">
+      <div className="grid">
   <header>
-    <div class="center snap">
-      <img src="./img/memoji-deon.png" alt="Deon Avatar">
+    <div className="center snap">
+      <img src="./img/memoji-deon.png" alt="Deon Avatar" />
       <h1>Deon Desir</h1>
-      <p class="center">Computer Science<br>
-        CUNY - Medgar Evers College<br>
+      <p className="center">Computer Science<br />
+        CUNY - Medgar Evers College<br />
         Brooklyn, NY</p>
     </div>
 
-    <div class="about-me">
+    <div className="about-me">
       <h2>About Me</h2>
       <p>Computer science student and presentation specialist with interests
         in data science, machine learning, UI/UX design and accessibility.</p>
@@ -40,22 +30,22 @@
   <main>
     <h2>Projects</h2>
 
-    <div class="flex">
-      <div class="wip">
+    <div className="flex">
+      <div className="wip">
         <h3>Sentiment Analysis of Presidential Debates</h3>
         <p>Analysis retweets, likes, and sentiment of streamed tweets.</p>
-        <ul class="tag-list">
+        <ul className="tag-list">
           <li>API</li>
           <li>Python</li>
         </ul>
       </div>
 
-      <div class="wip">
+      <div className="wip">
         <h3>Rewrite of Projects</h3>
         <p>Ongoing revision and updates to current projects and <em>unfinished</em>
           projects, including Kotlin rewrites of Java-based Android class
           projects and future Swift versions.</p>
-        <ul class="tag-list">
+        <ul className="tag-list">
           <li>Android</li>
           <li>C++</li>
           <li>CSS</li>
@@ -65,12 +55,12 @@
         </ul>
       </div>
 
-      <div class="project">
+      <div className="project">
         <img src="./img/game-a-pedia-01.png" alt="Game A-pedia logo"/>
         <h3><a href="https://github.com/ddesir/CS355-Final-Project">Game A-pedia</a></h3>
         <p>Android app displaying list of games from SQL query via
           RecyclerView. Group project three members.</p>
-        <ul class="tag-list">
+        <ul className="tag-list">
           <li>API</li>
           <li>Google Firebase</li>
           <li>Java</li>
@@ -79,11 +69,11 @@
         </ul>
       </div>
 
-      <div class="project">
+      <div className="project">
         <img src="./img/cis211-final.png" alt="Screen shot of CIS211 final project site"/>
         <h3><a href="http://ddesir.github.io/CIS211/">Final Website</a></h3>
         <p>Website created for Internet and Emerging technologies final project.</p>
-        <ul class="tag-list">
+        <ul className="tag-list">
           <li>CSS</li>
           <li>HTML</li>
           <li>Javascript</li>
@@ -98,5 +88,9 @@
     <a href="https://www.linkedin.com/in/ddesir/">LinkedIn</a>
   </footer>
 </div>
-</body>
-</html>
+    </div>
+  );
+  }
+}
+
+export default App;
