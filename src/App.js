@@ -12,7 +12,7 @@ class App extends React.Component {
   }
 }
 
-function Unified() {
+const Unified = () => {
   return (
     <div className="App">
       <div className="grid">
