@@ -1,11 +1,12 @@
 import React from 'react';
+import memoji from '../img/memoji-deon.png';
 
 class Header extends React.Component {
     render() {
         return (
             <header>
                 <div className="center snap">
-                    <img src="./img/memoji-deon.png" alt="Deon Avatar" />
+                    <img src={memoji} alt="Deon Avatar" />
                     <h1>Deon Desir</h1>
                     <p className="center">Computer Science<br />
                         CUNY - Medgar Evers College<br />
